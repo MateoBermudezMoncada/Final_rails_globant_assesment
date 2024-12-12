@@ -1,0 +1,7 @@
+es:
+  form:
+    title: "Título"
+    description: "Descripción"
+    image: "Imagen"
+    submit: "Subir"
+    success: "¡Imagen subida exitosamente!"

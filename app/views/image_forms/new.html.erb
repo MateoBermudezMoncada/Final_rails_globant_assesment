@@ -1,0 +1,20 @@
+<%= form_with model: @image_form, local: true, html: { multipart: true } do |form| %>
+  <div class="mb-3">
+    <%= form.label :title, t('form.title'), class: 'form-label' %>
+    <%= form.text_field :title, class: 'form-control' %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :description, t('form.description'), class: 'form-label' %>
+    <%= form.text_area :description, class: 'form-control' %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :image, t('form.image'), class: 'form-label' %>
+    <%= form.file_field :image, accept: 'image/*', class: 'form-control' %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.submit t('form.submit'), class: 'btn btn-primary' %>
+  </div>
+<% end %>
