@@ -61,4 +61,4 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "cloudinary", "~> 2.2"
+gem "cloudinary", "~> 2.3"
